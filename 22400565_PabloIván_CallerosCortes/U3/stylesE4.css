@@ -1,0 +1,101 @@
+body{
+    background: #F0F2F5;
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    color: #1877f2;
+    font-size: 3.5rem;
+    margin-bottom: 10px; /* Pequño espacio debajo del logo*/
+}
+
+.contenedorPrincipal{
+    display: flex;
+    /*Convierte toda la caja padre en un contenedor flexible, por defecto
+    flexbox pone a todos sus cajas hijas en una linea horizontal*/
+
+    justify-content: center;
+    /*Centrado Horizontal: Mueve a las cajas hijas que son las ladoIzquiedo, ladoDerecho en el centro como una fila
+    alinea las cosas de izquierda a derecha*/
+
+    align-items: center;
+    /*Centrado Vertical: Alinea las cajas justo a la mitad del alto de la pantalla
+    alinea las cosas de arriba a abajo*/
+
+    height: 100vh;
+    /*Tamaño de la caja: Le decimos que ocupe el 100% de la altura del monitor*/
+
+    gap: 80px;
+    /*Crea un hueco invisible entre el lado izquierdo y el derecho*/
+}
+
+.tarjetaBlanca{
+    width: 400px;
+    background-color: white;
+    padding: 20px; /*Espacio para que los inputs no esten pegados a los bordes*/
+    border-radius: 8px;
+}
+
+.formularioLogin{
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    /*Separación automatica entre cada input dentro del formularioLogin*/
+}
+
+.formularioLogin input{
+    padding: 14px; 
+    /*Hacer las cajas de texto mas grandes*/
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.botonIniciar{
+    background-color: #1877f2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.botonCrear{
+    background-color: #42b72a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.subtitulo{
+    Font-size: 1.5rem;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.enlaceContraseña{
+    display: block;
+    text-align: center;
+    color: #1877f2;
+    text-decoration: none;
+    margin-top: 15px; 
+}
+
+/*Diseño responsivo*/
+
+@media(max-width: 900px){
+    .contenedorPrincipal {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
