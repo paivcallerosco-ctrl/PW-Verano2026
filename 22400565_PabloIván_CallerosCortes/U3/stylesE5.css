@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+}
+
+.encabezado a {
+    text-decoration: none;
+    color: #202124;
+    font-size: 0.9rem;
+}
+
+.encabezado a:hover{
+    text-decoration: underline;
+}
+
+.botonAcceder{
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contenidoPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 100px;
+}
+
+.logoGoogle{
+    font-size: 5.5rem;
+    margin-bottom: 30px;
+}.logoGoogle span:nth-child(1) { color: #4285F4; } 
+.logoGoogle span:nth-child(2) { color: #EA4335; } 
+.logoGoogle span:nth-child(3) { color: #FBBC05; } 
+.logoGoogle span:nth-child(4) { color: #4285F4; } 
+.logoGoogle span:nth-child(5) { color: #34A853; } 
+.logoGoogle span:nth-child(6) { color: #EA4335;}
+
+.cajaBuscar {
+    width: 100%;
+    max-width: 580px; 
+    margin-bottom: 30px;
+}
+
+.cajaBuscar input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px; 
+    font-size: 1rem;
+    outline: none;
+}
+
+.cajaBuscar input:hover, .cajaBuscar input:focus {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28); 
+    border-color: rgba(223,225,229,0);
+}
+
+.botonesBuscar {
+    display: flex;
+    gap: 15px; 
+    justify-content: center;
+}
+
+.botonesBuscar button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.botonesBuscar button:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+.piePagina {
+    background-color: #f2f2f2; 
+    padding: 15px 30px;
+    border-top: 1px solid #dadce0; 
+}
+
+.enlacesIzquierda {
+    display: flex;
+    gap: 25px; 
+}
+
+.enlacesIzquierda a {
+    color: #70757a;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.enlacesIzquierda a:hover {
+    text-decoration: underline;
+}
