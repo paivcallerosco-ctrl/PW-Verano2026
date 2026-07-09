@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.contenedorPantalla{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contenedorPrincipal{
+    display: flex;
+    flex-grow: 1;
+}
+
+.ladoIzquierdo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenLogo{
+    max-width: 350px;
+    height: auto;
+}
+
+.ladoDerecho{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    max-width: 600px;
+}
+
+.tituloPrincipal{
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.subtituloUneteHoy{
+    font-size: 2rem;
+    margin-bottom: 30px
+}
+
+.botonesA{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+button{
+    border-radius: 50px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    width: 300px;
+}
+
+.crearCuenta{
+    background-color: #1d9bf0;
+    color: white;
+}
+
+.botonTransparente{
+    background-color: black;
+    color: #1d9bf0;
+    border: 1px solid ;
+}
+
+.separador{
+    text-align: center;
+    width: 300px;
+}
+
+.terminos{
+    color: #71767b;
+    font-size: 0.80rem;
+    margin-top: 10px;
+}
+
+.piePagina{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 20px;
+}
+
+.piePagina a, .piePagina span{
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+    padding: 0 10px;
+    border-right: 1;
+    margin-bottom: 8px;    
+}
+
+.piePagina a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 900px){
+    .contenedorPrincipal {
+        flex-direction: column;
+    }
+}
+
+a{
+    color: #1d9bf0;
+}
+
+
+
+
+
