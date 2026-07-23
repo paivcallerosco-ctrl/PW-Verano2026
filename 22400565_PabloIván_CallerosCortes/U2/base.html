@@ -2,14 +2,110 @@
 <html lang = "es">
     <head>
         <meta charset="UTF-8">
-        <title>
-            Estructura Base 
-        </title>
+        <title>Estructura Base</title>
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                background: white;
+                color: black;
+                margin: 0;
+                padding: 20px;
+            }
+
+            div, form, table{
+                background: white;
+                padding: 10px;
+                margin-bottom: 20px;
+                border-radius: 8px;
+            }
+
+            h1,h2,h3,h4,h5,h6{
+                color: blue;
+            }
+
+            img{
+                width: 250px;
+                border-radius: 10px;
+                display: block;
+                margin: auto;
+            }
+
+            ul, ol{
+                padding-left: 30px;
+            }
+
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                text-align: center;
+            }
+
+            th{
+                background: aqua;
+                color: black;
+            }
+
+            td{
+                padding: 10px;
+            }
+
+            a{
+                color: aqua;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            a:hover{
+                text-decoration: underline;
+                color: blue;
+            }
+
+            fieldset{
+                border: 2px solid blue; 
+                border-radius: 10px;
+            }
+
+            legend{
+                font-weight: bold;
+                padding: 10px;
+                color: blue;
+            }
+
+            label{
+                font-weight: bold;
+            }
+
+            input, select, textarea{
+                margin-top: 5px;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            input[type="submit"], input[type="reset"]{
+                background: blue;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+
+            input[type="reset"]{
+                background: gray;
+            }
+
+            .boton{
+                background: blue;
+                color: white;
+                border: none;
+                cursor: pointer; 
+            }
+
+        </style>
     </head>
     <body>
-        <h3 id="encabezados">Encabezados</h3>
+        <h3 id="encabezados" style="color: red; background: blue; width: 150px; text-align: center;">Encabezados</h3>
         <h1>Encabezado H1 </h1>
-        <h2>Encabezado H2</h2>
+        <h2 style="background: yellow; padding: 20px; margin: 30px; border: 5px solid red; border-radius: 10px;">Encabezado H2</h2>
         <h3>Encabezado H3</h3>
         <h4>Encabezado H4</h4>
         <h5>Encabezado H5</h5>
@@ -53,5 +149,59 @@
         <a href="http://www.google.com" title="Ir a Google" target="_blank">Google</a><br>
         <a href="#encabezados">Ir a Encabezados</a><br>       
         <a href="#listas">Ir a Listas</a><br>
+        <h3>Formulario</h3>
+        <form>
+            <fieldset>
+                <legend>Ejemplo Formulario</legend>
+                <label>Texto</label>
+                <input type="text">
+                <br><br>
+                <label>Email</label>
+                <input type="email">
+                <br><br>
+                <label>Password</label>
+                <input type="password">
+                <br><br>
+                <label>Numero</label>
+                <input type="number">
+                <br><br>
+                <label>Rango</label>
+                <input type="range">
+                <br><br>
+                <label>Fecha</label>
+                <input type="date">
+                <br><br>
+                <label>Hora</label>
+                <input type="time">
+                <br><br>
+                <label>Color</label>
+                <input type="color">
+                <br><br>
+                <label>Checkbox</label>
+                <input type="checkbox">
+                <br><br>
+                <label>Radio</label><br>
+                <input type="radio">
+                <label>Opcion 1</label><br>
+                <input type="radio">
+                <label>Opcion 2</label><br>
+                <br><br>
+                <label>Slección de Eementos</label><br>
+                <select>
+                    <option>Opcion 1</option>
+                    <option>Opcion 2</option>
+                    <option>Opcion 3</option>
+                </select>
+                <br><br>
+                <label>Textarea</label><br>
+                <textarea rows="5" cols="15"></textarea> 
+                <br><br>
+                <label>Archivo</label>
+                <input type="file">
+                <br><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </fieldset> 
+        </form>
     </body>
 </html>
